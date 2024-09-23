@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 2081842028683393264}
   - component: {fileID: 2828366666754862632}
   - component: {fileID: 4549110904967478824}
-  - component: {fileID: 3068890893303551125}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -196,6 +195,7 @@ MonoBehaviour:
   playerCamera: {fileID: 4653824389719688823}
   walkSpeed: 6
   runSpeed: 12
+  zoomSpeed: 2
   jumpPower: 7
   gravity: 10
   lookSpeed: 2
@@ -215,38 +215,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   impactForce: 1000
   gunRange: 0
+  revolverCD: 0.7
+  canShoot: 1
   revolver: {fileID: 7403776601798272918}
+  revolver_shoot_SFX: {fileID: 0}
+  revolver_ric_SFXs: []
   muzzleFlash: {fileID: 0}
+  light_muzzleFlash: {fileID: 0}
+  impactEffect: {fileID: 0}
   Barrel:
     serializedVersion: 2
     m_Bits: 64
---- !u!54 &3068890893303551125
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5254052028996727732}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 1
-  m_Constraints: 112
-  m_CollisionDetection: 1
 --- !u!1 &5754255590068899669
 GameObject:
   m_ObjectHideFlags: 0
